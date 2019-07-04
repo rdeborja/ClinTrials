@@ -11,8 +11,11 @@
 		61029E2F22CC261A00551E7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61029E2E22CC261A00551E7D /* ViewController.swift */; };
 		61029E3222CC261A00551E7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61029E3022CC261A00551E7D /* Main.storyboard */; };
 		61029E3422CC261C00551E7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61029E3322CC261C00551E7D /* Assets.xcassets */; };
-		61029E3722CC261C00551E7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61029E3522CC261C00551E7D /* LaunchScreen.storyboard */; };
 		61029E4222CC261C00551E7D /* ClinTrialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61029E4122CC261C00551E7D /* ClinTrialsTests.swift */; };
+		61029E4D22CC263000551E7D /* ClinicalTrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61029E4C22CC263000551E7D /* ClinicalTrial.swift */; };
+		61029E4F22CC2BAC00551E7D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61029E4E22CC2BAC00551E7D /* Launch Screen.storyboard */; };
+		61029E5322CD683900551E7D /* ClinicalTrialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61029E5222CD683900551E7D /* ClinicalTrialCell.swift */; };
+		61029E5522CD6EAA00551E7D /* ClinicalTrialListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61029E5422CD6EAA00551E7D /* ClinicalTrialListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +34,14 @@
 		61029E2E22CC261A00551E7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61029E3122CC261A00551E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61029E3322CC261C00551E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		61029E3622CC261C00551E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61029E3822CC261C00551E7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61029E3D22CC261C00551E7D /* ClinTrialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClinTrialsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61029E4122CC261C00551E7D /* ClinTrialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinTrialsTests.swift; sourceTree = "<group>"; };
 		61029E4322CC261C00551E7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61029E4C22CC263000551E7D /* ClinicalTrial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrial.swift; sourceTree = "<group>"; };
+		61029E4E22CC2BAC00551E7D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		61029E5222CD683900551E7D /* ClinicalTrialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialCell.swift; sourceTree = "<group>"; };
+		61029E5422CD6EAA00551E7D /* ClinicalTrialListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicalTrialListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				61029E2C22CC261A00551E7D /* AppDelegate.swift */,
+				61029E4C22CC263000551E7D /* ClinicalTrial.swift */,
 				61029E2E22CC261A00551E7D /* ViewController.swift */,
+				61029E5422CD6EAA00551E7D /* ClinicalTrialListViewController.swift */,
 				61029E3022CC261A00551E7D /* Main.storyboard */,
+				61029E5222CD683900551E7D /* ClinicalTrialCell.swift */,
+				61029E4E22CC2BAC00551E7D /* Launch Screen.storyboard */,
 				61029E3322CC261C00551E7D /* Assets.xcassets */,
-				61029E3522CC261C00551E7D /* LaunchScreen.storyboard */,
 				61029E3822CC261C00551E7D /* Info.plist */,
 			);
 			path = ClinTrials;
@@ -177,7 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61029E3722CC261C00551E7D /* LaunchScreen.storyboard in Resources */,
+				61029E4F22CC2BAC00551E7D /* Launch Screen.storyboard in Resources */,
 				61029E3422CC261C00551E7D /* Assets.xcassets in Resources */,
 				61029E3222CC261A00551E7D /* Main.storyboard in Resources */,
 			);
@@ -197,8 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61029E5522CD6EAA00551E7D /* ClinicalTrialListViewController.swift in Sources */,
+				61029E4D22CC263000551E7D /* ClinicalTrial.swift in Sources */,
 				61029E2F22CC261A00551E7D /* ViewController.swift in Sources */,
 				61029E2D22CC261A00551E7D /* AppDelegate.swift in Sources */,
+				61029E5322CD683900551E7D /* ClinicalTrialCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,14 +239,6 @@
 				61029E3122CC261A00551E7D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		61029E3522CC261C00551E7D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				61029E3622CC261C00551E7D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

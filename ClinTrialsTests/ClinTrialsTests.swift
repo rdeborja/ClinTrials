@@ -10,25 +10,19 @@ import XCTest
 @testable import ClinTrials
 
 class ClinTrialsTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testFailedTrial() {
+        // empty city
+        let emptyCity = ClinicalTrial(city: "", institute: "institute", isActive: true, startDate: nil, endDate: nil)
+        XCTAssertNil(emptyCity)
+        
+        // empty institute
+        let emptyInstitute = ClinicalTrial(city: "city", institute: "", isActive: true, startDate: nil, endDate: nil)
+        XCTAssertNil(emptyInstitute)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testSuccessTrial() {
+        // valid trial
+        let validTrial = ClinicalTrial(city: "city", institute: "institute", isActive: true, startDate: nil, endDate: nil)
+        XCTAssertNotNil(validTrial)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
